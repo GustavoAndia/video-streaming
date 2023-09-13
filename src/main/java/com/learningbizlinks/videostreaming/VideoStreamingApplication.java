@@ -1,18 +1,13 @@
 package com.learningbizlinks.videostreaming;
-import com.learningbizlinks.videostreaming.game.ReproductorVideoDescargado;
-import com.learningbizlinks.videostreaming.game.ReproductorVideoEnLinea;
-import com.learningbizlinks.videostreaming.game.ReproductorVideoLocal;
-import com.learningbizlinks.videostreaming.runner.ExecutorVideo;
+import com.learningbizlinks.videostreaming.videos.ReproductorVideoDescargado;
+import com.learningbizlinks.videostreaming.videos.ReproductorVideoEnLinea;
+import com.learningbizlinks.videostreaming.videos.ReproductorVideoLocal;
+import com.learningbizlinks.videostreaming.executor.ExecutorVideo;
 
 
 public class VideoStreamingApplication {
 
 	public static void main(String[] args) {
-//		//Instancia del juego Mario
-//		var marioGame = new MarioGame();
-//
-//		//Instancia  del juego Pacman
-//		var pacmanGame = new PacmanGame();
 
 		var videoDescargado = new ReproductorVideoDescargado();
 
@@ -21,8 +16,8 @@ public class VideoStreamingApplication {
 		var videoLocal = new ReproductorVideoLocal();
 
 		//Instancia del GameRunner (Ejecutor de juegos)
-		var gameRunner = new ExecutorVideo(videoLocal);
-		gameRunner.run();
+		var videoExecutor = new ExecutorVideo(videoLocal);
+		videoExecutor.run();
 	}
 
 }

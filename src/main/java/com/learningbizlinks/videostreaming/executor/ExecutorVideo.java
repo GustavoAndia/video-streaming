@@ -1,6 +1,6 @@
-package com.learningbizlinks.videostreaming.runner;
+package com.learningbizlinks.videostreaming.executor;
 
-import com.learningbizlinks.videostreaming.game.VideoConsole;
+import com.learningbizlinks.videostreaming.videos.VideoConsole;
 
 public class ExecutorVideo {
 

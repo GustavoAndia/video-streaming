@@ -1,4 +1,4 @@
-package com.learningbizlinks.videostreaming.game;
+package com.learningbizlinks.videostreaming.videos;
 
 public class ReproductorVideoDescargado implements VideoConsole {
 
