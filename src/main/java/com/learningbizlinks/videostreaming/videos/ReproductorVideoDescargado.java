@@ -1,5 +1,8 @@
 package com.learningbizlinks.videostreaming.videos;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ReproductorVideoDescargado implements VideoConsole {
 
     public void reproducir() {

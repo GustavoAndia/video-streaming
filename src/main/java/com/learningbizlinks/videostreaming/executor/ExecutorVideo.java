@@ -1,7 +1,9 @@
 package com.learningbizlinks.videostreaming.executor;
 
 import com.learningbizlinks.videostreaming.videos.VideoConsole;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class ExecutorVideo {
 
     private VideoConsole video;

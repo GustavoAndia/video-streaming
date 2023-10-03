@@ -1,6 +1,9 @@
 package com.learningbizlinks.videostreaming.videos;
 
-public class ReproductorVideoEnLinea implements VideoConsole {
+import org.springframework.stereotype.Component;
+
+@Component
+public class ReproductorVideoEnLinea{
 
     public void reproducir() {
         System.out.println("Reproduciendo el video en línea");
